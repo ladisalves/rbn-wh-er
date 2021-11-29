@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import ExchangeRateRow from './ExchangeRateRow'
 
-test('renders learn react link', () => {
+test('renders ExchangeRateRow', () => {
   const { getByTestId, getByText } = render(
     <ExchangeRateRow rate={16.264} country={'Australia'} code={'AUD'} name={'dollar'} quantity={99} />,
   )
