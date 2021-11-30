@@ -8,11 +8,13 @@ const Header = styled.div`
 
 const Cell = styled.div`
   display: table-cell;
+  font-weight: bold;
+  background: #c0d7f2;
 `
 
 const ExchangeRateHeader: React.FC = () => (
   <>
-    <Header data-testid={`rate-list-header`}>
+    <Header data-testid={'rate-list-header'}>
       <Cell>Country</Cell>
       <Cell>Currency</Cell>
       <Cell>Quantity</Cell>

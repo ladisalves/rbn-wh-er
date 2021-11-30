@@ -18,7 +18,7 @@ const Cell = styled.div`
 `
 
 const ExchangeRateRow: React.FC<RateProps> = ({ rate, quantity, code, country, name }: RateProps) => (
-  <Row data-testid={`rate-${code}`}>
+  <Row className='tableRow' data-testid={`rate-${code}`}>
     <Cell>{country}</Cell>
     <Cell>{name}</Cell>
     <Cell>{quantity}</Cell>
