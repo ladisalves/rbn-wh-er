@@ -52,7 +52,9 @@ const ConversionForm: React.FC<ConversationFormProps> = ({ rates }: Conversation
         {' CZK to '}
         <select className='form-select' {...register('code', { required: true })}>
           {rates.map(({ code }) => (
-            <option value={code}>{code}</option>
+            <option key={code} value={code}>
+              {code}
+            </option>
           ))}
         </select>{' '}
         <input type='submit' value='Convert' />
