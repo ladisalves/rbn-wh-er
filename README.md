@@ -10,7 +10,7 @@ This application gets exchanges rates from CNB (Czech National Bank). You can ea
 
 ## Caveats
 
-CORS headers are not correctly set for server response. Remote proxy is used to overcome the lack of `Access-Control-Allow-Origin` header.
+CORS headers are not correctly set for server response. Remote proxy is used to overcome the lack of `Access-Control-Allow-Origin` header. This shouldn't happen in the real life scenario.
 
 - CNB end-point URL: https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-
 devizoveho-trhu/denni_kurz.txt
