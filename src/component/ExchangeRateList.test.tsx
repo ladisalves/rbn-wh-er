@@ -3,13 +3,13 @@ import { render } from '@testing-library/react'
 import ExchangeRateList from './ExchangeRateList'
 import { ExchangeRate } from '../types'
 
-const rates: ExchangeRate[] = [
+export const mockedRates: ExchangeRate[] = [
   { rate: 11.1, country: 'Australia', name: 'dollar', code: 'AUD', quantity: 1 },
   { rate: 21.1, country: 'EMU', name: 'euro', code: 'EUR', quantity: 1 },
 ]
 
 test('renders ExchangeRateList', () => {
-  const { getByTestId } = render(<ExchangeRateList rates={rates} />)
+  const { getByTestId } = render(<ExchangeRateList rates={mockedRates} />)
 
   expect(getByTestId('rate-list')).toBeInTheDocument()
   expect(getByTestId('rate-list-header')).toBeInTheDocument()
