@@ -1,13 +1,13 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import ConversionResult from './ConversionResult'
 import { mockedRates } from './ExchangeRateList.test'
+import ConversionForm from './ConversionForm'
 
-test('renders ConversionResult', () => {
-  const { getByTestId, getByText } = render(
-    <ConversionResult amount={100.11} currencyCode={'EUR'} rates={mockedRates} />,
-  )
+test('renders ConversionForm', () => {
+  const { getByTestId, getByText } = render(<ConversionForm rates={mockedRates} />)
 
-  expect(getByTestId('conversion-result')).toBeInTheDocument()
-  expect(getByText('CZK 100.11')).toBeInTheDocument()
+  expect(getByTestId('convert-form')).toBeInTheDocument()
+  expect(getByTestId('form-amount')).toBeInTheDocument()
+  expect(getByTestId('form-code')).toBeInTheDocument()
+  expect(getByTestId('form-submit')).toBeInTheDocument()
 })

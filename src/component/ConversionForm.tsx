@@ -40,24 +40,25 @@ const ConversionForm: React.FC<ConversationFormProps> = ({ rates }: Conversation
   }
 
   return (
-    <StyledForm onSubmit={handleSubmit(onSubmit)}>
+    <StyledForm onSubmit={handleSubmit(onSubmit)} data-testid={'convert-form'}>
       <h3>Convert CZK</h3>
       <div>
         <input
           placeholder='amount'
           className='form-control'
+          data-testid='form-amount'
           type='text'
           {...register('amount', { required: true, pattern: /[0-9]+[.|,]?[0-9]*/ })}
         />
         {' CZK to '}
-        <select className='form-select' {...register('code', { required: true })}>
+        <select className='form-select' {...register('code', { required: true })} data-testid='form-code'>
           {rates.map(({ code }) => (
             <option key={code} value={code}>
               {code}
             </option>
           ))}
         </select>{' '}
-        <input type='submit' value='Convert' />
+        <input type='submit' value='Convert' data-testid='form-submit' />
       </div>
       {showResult && <ConversionResult amount={amount} currencyCode={selectedCode} rates={rates} />}
     </StyledForm>
