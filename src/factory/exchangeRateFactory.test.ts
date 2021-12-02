@@ -1,6 +1,6 @@
 import { exchangeRateFactory } from './exchangeRateFactory'
 
-describe('EchangeRate Factory', () => {
+describe('ExchangeRate Factory', () => {
   it('should create ExchangeRate', () => {
     const exchangeRate = exchangeRateFactory('Island|koruna|100|ISK|17,364')
     expect(exchangeRate.rate).toBe(17.364)
