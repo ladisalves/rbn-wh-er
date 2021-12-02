@@ -5,7 +5,10 @@ This application gets exchange rates from CNB (Czech National Bank). You can eas
 `For testing purposes only!`
 
 ## Online version
-https://codesandbox.io/s/pensive-rain-klhuh
+
+https://klhuh.csb.app/
+
+sandbox mode: https://codesandbox.io/s/pensive-rain-klhuh
 
 
 ## Caveats
