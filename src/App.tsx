@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
+import { QueryClient, QueryClientProvider } from 'react-query'
 import ExchangeRates from './component/ExhangeRates'
 
 const AppWrapper = styled.div`
@@ -10,7 +10,7 @@ const AppWrapper = styled.div`
 
 const queryClient = new QueryClient()
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <AppWrapper>
