@@ -1,11 +1,11 @@
 # Demo - CNB Exchange Rates
 
-This application gets exchanges rates from CNB (Czech National Bank). You can easily convert Czech Crowns into other currencies.
+This application gets exchange rates from CNB (Czech National Bank). You can easily convert Czech Crowns into other currencies.
 
 `For testing purposes only!`
 
 ## Online version
-
+https://codesandbox.io/s/pensive-rain-klhuh
 
 
 ## Caveats
@@ -22,4 +22,4 @@ devizoveho-trhu/denni_kurz.txt
 yarn
 yarn start
 ```
-An application opens port 3000 for connection.
+An application opens port 3000 for connections.
