@@ -1,6 +1,6 @@
 import { ExchangeRate } from '../types'
 
-export const convertRate = (amount: number, code: string, rates: ExchangeRate[]) => {
+export const convertRate = (amount: number, code: string, rates: ExchangeRate[]): number => {
   const exchangeRate = rates.find(rate => rate.code === code)
 
   if (!exchangeRate) {
